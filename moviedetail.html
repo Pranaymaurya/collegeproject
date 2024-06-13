@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Detail</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .movie-detail {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .movie-image {
+            max-width: 300px;
+            margin-right: 20px;
+        }
+        .movie-info {
+            max-width: 600px;
+        }
+        .movie-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .movie-description {
+            margin: 20px 0;
+        }
+        .movie-details {
+            list-style-type: none;
+            padding: 0;
+        }
+        .movie-details li {
+            margin-bottom: 10px;
+        }
+        
+        .navbar {
+            justify-content: center;
+        }
+        .navbar-nav {
+            flex-direction: row;
+        }
+        .nav-item {
+            padding: 0 10px;
+        }
+        .navbar-collapse {
+            flex-grow: 0;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .movie-finder {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+        }
+        .card {
+            width: 18rem;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.1);
+        }
+    
+    </style>
+</head>
+<body>
+    <div style="background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+      ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <div>
+                <img src="logo.webp" style="height: 50px; width: 50px;">
+                <a class="navbar-brand" href="#">Moviefin</a>
+              </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a> -->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Contact us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-4">
+          <!-- <div class="movie-finder" style="height: 100px; display: flex; justify-content: center; align-items: center;">
+            <h1 style="color: black; font-style:oblique;">Movie finder</h1>
+          </div> -->
+    <div class="container">
+        <div class="movie-detail">
+            <img src="rocksatr.jpg" class="movie-image" alt="Movie Image">
+            <div class="movie-info">
+                <div class="movie-title">Movie Title</div>
+                <ul class="movie-details">
+                    <li><strong>Release Date:</strong> January 1, 2022</li>
+                    <li><strong>Genre:</strong> Action, Adventure</li>
+                    <li><strong>Director:</strong> John Doe</li>
+                    <li><strong>Cast:</strong> Jane Doe, John Smith, Alice Johnson</li>
+                </ul>
+                <div class="movie-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div></div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
